@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:habit_tracker/config/theme/custom_theme.dart';
 
@@ -51,7 +52,17 @@ class HomeAppBarComponent extends StatelessWidget {
             borderRadius: BorderRadius.circular(30),
           ),
           padding: EdgeInsets.symmetric(horizontal: width * 0.03),
-          child: Image.asset('assets/icons/ios_angel.png', width: width * 0.07),
+          child: ShaderMask(
+            shaderCallback: (Rect bounds) {
+              return CustomTheme.primaryGradient.createShader(bounds);
+            },
+            blendMode: BlendMode.srcIn,
+            child: Icon(
+              CupertinoIcons.add_circled_solid,
+              color: Colors.white,
+              size: width * 0.07,
+            ),
+          ),
         ),
       ],
     );
