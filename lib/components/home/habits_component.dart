@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:habit_tracker/components/habit/habit_container_component.dart';
+
 import 'package:habit_tracker/config/theme/custom_theme.dart';
+import 'package:habit_tracker/controller/habit/habit_container_controller.dart';
 
 class HabitsComponent extends StatelessWidget {
   const HabitsComponent({super.key, required this.height, required this.width});
@@ -34,7 +35,7 @@ class HabitsComponent extends StatelessWidget {
           ],
         ),
         SizedBox(height: height * 0.012),
-        HabitContainerComponent(height: height, width: width),
+        HabitContainerController(width: width, height: height),
       ],
     );
   }
