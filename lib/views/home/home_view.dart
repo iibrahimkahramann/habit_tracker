@@ -41,8 +41,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                   height: height,
                   width: width,
                   title: 'More control, more you! 🔥',
-                  subtitle:
-                      'Building habits with Premium is now easier than ever!',
+                  subtitle: 'Building habits with Premium is now much easier!',
                   onTap: () {},
                 ),
                 SizedBox(height: height * 0.012),
