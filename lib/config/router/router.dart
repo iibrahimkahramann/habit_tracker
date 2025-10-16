@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:habit_tracker/config/bar/nav_bar.dart';
 import 'package:habit_tracker/views/activity/activity_view.dart';
+import 'package:habit_tracker/views/create_custom_habit/create_custom_habit_view.dart';
 import 'package:habit_tracker/views/home/home_view.dart';
 import 'package:habit_tracker/views/settings/settings_view.dart';
 import 'package:habit_tracker/views/splahs/splash_view.dart';
@@ -61,6 +62,11 @@ final router = GoRouter(
               const NoTransitionPage(child: SettingsView()),
         ),
       ],
+    ),
+    GoRoute(
+      path: '/create-custom-habit',
+      pageBuilder: (context, state) =>
+          const NoTransitionPage(child: CreateCustomHabitView()),
     ),
   ],
 );

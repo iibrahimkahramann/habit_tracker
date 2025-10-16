@@ -68,6 +68,12 @@ class CustomTheme {
         color: boldColor,
         fontFamily: 'AirbnbCereal',
       ),
+      displayMedium: TextStyle(
+        fontSize: height * 0.022,
+        fontWeight: FontWeight.w500,
+        color: boldColor,
+        fontFamily: 'AirbnbCereal',
+      ),
       displaySmall: TextStyle(
         fontSize: height * 0.012,
         fontWeight: FontWeight.w500,
