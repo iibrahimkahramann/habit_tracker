@@ -44,6 +44,7 @@ class GoalContainerWidget extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(height: height * 0.02),
       ],
     );
   }
