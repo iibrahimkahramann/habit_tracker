@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:habit_tracker/components/habit/custom/icon_and_color_component.dart';
 import 'package:habit_tracker/components/habit/custom/textfield_component.dart';
 import 'package:habit_tracker/config/bar/detail_bar/detail_nav_bar.dart';
+import 'package:habit_tracker/widgets/habit/goal_container_widget.dart';
 
 class CreateCustomHabitView extends ConsumerStatefulWidget {
   const CreateCustomHabitView({super.key});
@@ -34,6 +35,7 @@ class _CreateCustomHabitViewState extends ConsumerState<CreateCustomHabitView> {
                 placeholder: 'Enter Habit Name',
               ),
               IconAndColorComponent(height: height, width: width),
+              GoalContainerWidget(height: height, width: width),
             ],
           ),
         ),

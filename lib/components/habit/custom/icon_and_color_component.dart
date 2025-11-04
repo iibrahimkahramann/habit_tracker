@@ -31,6 +31,7 @@ class IconAndColorComponent extends StatelessWidget {
             ColorSelectComponent(width: width, height: height),
           ],
         ),
+        SizedBox(height: height * 0.02),
       ],
     );
   }
